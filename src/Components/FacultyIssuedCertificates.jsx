@@ -18,7 +18,7 @@ const FacultyIssuedCertificates = () => {
           to="/certificate-issuance-form"
           className="text-[20px] text-black mb-2 w-full flex items-center justify-center underline-link"
         >
-        Certificate issuance Form
+        Certificate Issuance Form
         </Link>
         <Link
           to="/faculty-issued-certificates"
