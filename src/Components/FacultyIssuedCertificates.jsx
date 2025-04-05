@@ -16,15 +16,15 @@ const FacultyIssuedCertificates = () => {
         <p className="text-[32px] mb-6">Mr. XYZ</p>
         <Link
           to="/certificate-issuance-form"
-          className="text-[20px] text-black mb-2 w-full flex items-center justify-center"
+          className="text-[20px] text-black mb-2 w-full flex items-center justify-center underline-link"
         >
-          Certificate issuance Form
+        Certificate issuance Form
         </Link>
         <Link
           to="/faculty-issued-certificates"
-          className="text-[20px] text-black bg-gray-100 py-2 px-4 w-full flex items-center justify-center border-l-4 border-red-500 no-underline"
+          className="text-[20px] text-black bg-gray-100 py-2 px-4 w-full flex items-center justify-center border-l-4 border-red-500"
         >
-          Issued Certificates
+        Issued Certificates
         </Link>
         <div className="mt-auto mb-8 flex flex-col items-center space-y-4">
           <div className="flex items-center space-x-2">
@@ -35,9 +35,9 @@ const FacultyIssuedCertificates = () => {
             />
             <Link
               to="/settings"
-              className="text-[24px] text-black"
+              className="text-[24px] text-black underline-link" 
             >
-              Settings
+            Settings
             </Link>
           </div>
           <div className="flex items-center space-x-2">
@@ -47,10 +47,10 @@ const FacultyIssuedCertificates = () => {
               className="w-[30px] h-[30px]"
             />
             <Link
-              to="/Login"
-              className="text-[24px] text-black"
+              to="/"
+              className="text-[24px] text-black underline-link"
             >
-              Log Out
+            Log Out
             </Link>
           </div>
         </div>
