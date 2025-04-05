@@ -47,7 +47,7 @@ const FacultyIssuedCertificates = () => {
               className="w-[30px] h-[30px]"
             />
             <Link
-              to="/Login"
+              to="/"
               className="text-[24px] text-black"
             >
               Log Out
