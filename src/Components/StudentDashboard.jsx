@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const StudentDashboard = () => {
   return (
     <div className="w-full h-screen bg-white">
-      <div className="fixed top-0 left-0 w-full h-[87px] bg-[#C4161C] flex justify-center items-center z-50">
+      <div className="fixed top-0 left-0 w-full h-[87px] bg-[#C4161C] flex justify-center items-center z-50 fixed">
         <h1 className="text-white text-[32px]">AccrediLink</h1>
       </div>
-      <div className="absolute left-0 top-[87px] w-[284px] h-[937px] bg-[#D3D3D3]" >
+      <div className="absolute left-0 top-[87px] w-[284px] h-[937px] bg-[#D3D3D3] fixed" >
       <img
         src="/users.jpg"
         alt="Profile"
@@ -50,7 +50,7 @@ const StudentDashboard = () => {
         </Link>
       </div>
       </div>
-      <div className="absolute left-[284px] top-[87px] right-0 bottom-0 flex justify-center items-center">
+      <div className="absolute left-[284px] top-[87px] right-0 bottom-0 flex justify-center items-center fixed">
         <img
           src="/logo.png"
           alt="Dashboard Visual"

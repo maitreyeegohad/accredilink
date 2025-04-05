@@ -12,7 +12,7 @@ const CertIssuanceForm = () => {
       <div className="fixed top-0 left-0 w-full h-[87px] bg-[#C4161C] flex justify-center items-center z-50">
         <h1 className="text-white text-[32px]">AccrediLink</h1>
       </div>
-      <div className="absolute left-0 top-[87px] w-[284px] h-[937px] bg-[#D3D3D3]" >
+      <div className="absolute left-0 top-[87px] w-[284px] h-[937px] fixed bg-[#D3D3D3]" >
         <img
           src="/users.jpg"
           alt="Profile"
