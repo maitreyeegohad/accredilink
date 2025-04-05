@@ -60,55 +60,77 @@ const CertIssuanceForm = () => {
         <p className="absolute left-[320px] top-[20px] text-[30px] font-semibold whitespace-nowrap">
           Certificate Issuance Form
         </p>
-        <p className="absolute left-[360px] top-[100px] text-[26px] whitespace-nowrap">
+        <p className="absolute left-[340px] top-[100px] text-[26px] whitespace-nowrap">
+          Certificate Template
+        </p>
+        <div className="absolute left-[600px] top-[90px] w-[150px] h-[60px]">
+          <label
+            htmlFor="fileUpload"
+            className="w-full h-full bg-[#C4161C] text-white text-[20px] font-semibold rounded-[30px] flex justify-center items-center cursor-pointer shadow-md"
+          >
+            Upload
+          </label>
+          <input
+            type="file"
+            id="fileUpload"
+            className="hidden"
+            onChange={(e) => {
+              const file = e.target.files[0];
+              if (file) {
+                console.log("Selected file:", file.name);
+              }
+            }}
+          />
+        </div>
+        <p className="absolute left-[360px] top-[180px] text-[26px] whitespace-nowrap">
           Name of Student
         </p>
         <input
           type="text"
-          className="absolute left-[600px] top-[90px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
+          className="absolute left-[600px] top-[170px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
           placeholder="e.g. ABC"
         />
-        <p className="absolute left-[410px] top-[180px] text-[26px] whitespace-nowrap">
+        <p className="absolute left-[410px] top-[260px] text-[26px] whitespace-nowrap">
           Branch
         </p>
         <input
           type="text"
-          className="absolute left-[600px] top-[170px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
+          className="absolute left-[600px] top-[250px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
           placeholder="e.g. ENTC"
         />
-        <p className="absolute left-[415px] top-[260px] text-[26px] whitespace-nowrap">
+        <p className="absolute left-[415px] top-[340px] text-[26px] whitespace-nowrap">
           Batch
         </p>
         <input
           type="text"
-          className="absolute left-[600px] top-[250px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
+          className="absolute left-[600px] top-[330px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
           placeholder="e.g. 2023-27"
         />
-        <p className="absolute left-[405px] top-[340px] text-[26px] whitespace-nowrap">
+        <p className="absolute left-[405px] top-[420px] text-[26px] whitespace-nowrap">
           Division
         </p>
         <input
           type="text"
-          className="absolute left-[600px] top-[330px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
+          className="absolute left-[600px] top-[410px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
           placeholder="e.g. A"
         />
-        <p className="absolute left-[425px] top-[420px] text-[26px] whitespace-nowrap">
+        <p className="absolute left-[425px] top-[500px] text-[26px] whitespace-nowrap">
           PRN
         </p>
         <input
           type="text"
-          className="absolute left-[600px] top-[410px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
+          className="absolute left-[600px] top-[490px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
           placeholder="e.g. 23070123075"
         />
-        <p className="absolute left-[380px] top-[500px] text-[26px] whitespace-nowrap">
+        <p className="absolute left-[380px] top-[580px] text-[26px] whitespace-nowrap">
           Achievement
         </p>
         <input
           type="text"
-          className="absolute left-[600px] top-[490px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
+          className="absolute left-[600px] top-[570px] w-[789px] h-[60px] pl-8 rounded-[30px] bg-[#D9D9D9] px-4 text-[20px] placeholder-gray-600 text-black outline-none font-semibold"
           placeholder="e.g. xyz"
         />
-        <div className="absolute top-[570px] left-[1110px]">
+        <div className="absolute top-[650px] left-[1110px]">
           <button
             onClick={handleIssue}
             className="w-[280px] h-[60px] !bg-[#C4161C] text-white !text-[26px] !rounded-[30px] !shadow-xl flex justify-center items-center font-semibold"
