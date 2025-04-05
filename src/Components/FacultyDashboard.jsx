@@ -15,12 +15,12 @@ const FacultyDashboard = () => {
       <p className="absolute left-[85px] top-[200px] text-[32px]">Mr. XYZ</p>
       <Link
         to="/certificate-issuance-form"
-        className="absolute left-[30px] top-[260px] text-[20px] text-black underline">      
+        className="absolute left-[30px] top-[260px] text-[20px] underline-link">      
       Certificate Issuance Form
       </Link>
       <Link
         to="/faculty-issued-certificates"
-        className="absolute left-[60px] top-[300px] text-[20px] underline text-black">
+        className="absolute left-[60px] top-[300px] text-[20px] underline-link">
       Issued Certificates
       </Link>
       <div className="absolute left-[75px] top-[650px] flex items-center space-x-2">
@@ -31,7 +31,7 @@ const FacultyDashboard = () => {
         />
         <Link
           to="/settings"
-          className="text-[24px] text-black underline"
+          className="text-[24px] underline-link"
         >
         Settings
         </Link>
@@ -43,8 +43,8 @@ const FacultyDashboard = () => {
           className="w-[30px] h-[30px]"
         />
         <Link
-          to="/Login"
-          className="text-[24px] text-black underline"
+          to="/"
+          className="text-[24px] underline-link"
         >
         Logout
         </Link>

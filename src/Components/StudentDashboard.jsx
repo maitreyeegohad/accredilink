@@ -15,12 +15,12 @@ const StudentDashboard = () => {
       <p className="absolute left-[85px] top-[200px] text-[32px]">Mr. XYZ</p>
       <Link
         to="/student-certificates"
-        className="absolute left-[70px] top-[260px] text-[20px] text-black underline">      
+        className="absolute left-[70px] top-[260px] text-[20px] underline-link">      
       My Certificates
       </Link>
       <Link
         to="/raise-complaint"
-        className="absolute left-[65px] top-[300px] text-[20px] underline text-black">
+        className="absolute left-[65px] top-[300px] text-[20px] underline-link">
       Raise Complaint
       </Link>
       <div className="absolute left-[75px] top-[650px] flex items-center space-x-2">
@@ -31,7 +31,7 @@ const StudentDashboard = () => {
         />
         <Link
           to="/settings"
-          className="text-[24px] text-black underline"
+          className="text-[24px] underline-link"
         >
         Settings
         </Link>
@@ -43,8 +43,8 @@ const StudentDashboard = () => {
           className="w-[30px] h-[30px]"
         />
         <Link
-          to="/Login"
-          className="text-[24px] text-black underline"
+          to="/"
+          className="text-[24px] underline-link"
         >
         Logout
         </Link>

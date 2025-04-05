@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from "./Components/Login";
 import FacultyDashboard from "./Components/FacultyDashboard";
 import StudentDashboard from "./Components/StudentDashboard";
@@ -12,8 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/Login" />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/faculty-dashboard" element={<FacultyDashboard />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/certificate-issuance-form" element={<CertIssuanceForm />} />
