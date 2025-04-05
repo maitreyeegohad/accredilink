@@ -22,7 +22,7 @@ const FacultyIssuedCertificates = () => {
         </Link>
         <Link
           to="/faculty-issued-certificates"
-          className="text-[20px] text-black bg-gray-100 py-2 px-4 w-full flex items-center justify-center border-l-4 border-red-500"
+          className="text-[20px] text-black bg-gray-100 py-2 px-4 w-full flex items-center justify-center border-l-7 border-red-500"
         >
         Issued Certificates
         </Link>
