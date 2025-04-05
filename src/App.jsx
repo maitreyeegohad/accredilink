@@ -5,6 +5,8 @@ import StudentDashboard from "./Components/StudentDashboard";
 import CertIssuanceForm from "./Components/CertIssuanceForm";
 import FacultyIssuedCertificates from "./Components/FacultyIssuedCertificates";
 import Settings from "./Components/Settings";
+import StudentCertificates from "./Components/StudentCertificates";
+import RaiseComplaint from "./Components/RaiseComplaint";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/certificate-issuance-form" element={<CertIssuanceForm />} />
         <Route path="/faculty-issued-certificates" element={<FacultyIssuedCertificates />} />
+        <Route path="/student-certificates" element={<StudentCertificates />} />
+        <Route path="/raise-complaint" element={<RaiseComplaint />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>

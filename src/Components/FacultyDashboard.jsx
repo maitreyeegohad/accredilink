@@ -14,16 +14,16 @@ const FacultyDashboard = () => {
         className="absolute left-[70px] top-[40px] w-[150px] h-[150px] rounded-full object-cover"/>
       <p className="absolute left-[85px] top-[200px] text-[32px]">Mr. XYZ</p>
       <Link
-        to="/CertIssuanceForm"
+        to="/certificate-issuance-form"
         className="absolute left-[30px] top-[260px] text-[20px] text-black underline">      
       Certificate Issuance Form
       </Link>
       <Link
-        to="/issued-certificates"
+        to="/faculty-issued-certificates"
         className="absolute left-[60px] top-[300px] text-[20px] underline text-black">
       Issued Certificates
       </Link>
-      <div className="absolute left-[60px] top-[650px] flex items-center space-x-2">
+      <div className="absolute left-[75px] top-[650px] flex items-center space-x-2">
         <img
           src="/settings.png"
           alt="Settings Icon"
@@ -36,7 +36,7 @@ const FacultyDashboard = () => {
         Settings
         </Link>
       </div>
-      <div className="absolute left-[60px] top-[700px] flex items-center space-x-2">
+      <div className="absolute left-[75px] top-[700px] flex items-center space-x-2">
         <img
           src="/logout.png"
           alt="Logout Icon"
