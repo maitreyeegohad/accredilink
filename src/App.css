@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited,
+a:active {
+  color: black;
+}
+
+a:hover {
+  color: #C4161C;
+}

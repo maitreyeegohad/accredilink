@@ -1,11 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login";
+import FacultyDashboard from "./Components/FacultyDashboard";
+import StudentDashboard from "./Components/StudentDashboard";
+import CertIssuanceForm from "./Components/CertIssuanceForm";
+import FacultyIssuedCertificates from "./Components/FacultyIssuedCertificates";
+import Settings from "./Components/Settings";
 
 function App() {
-  return <Login />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/Login" element={<Login />} />
+        <Route path="/faculty-dashboard" element={<FacultyDashboard />} />
+        <Route path="/student-dashboard" element={<StudentDashboard />} />
+        <Route path="/certificate-issuance-form" element={<CertIssuanceForm />} />
+        <Route path="/faculty-issued-certificates" element={<FacultyIssuedCertificates />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
