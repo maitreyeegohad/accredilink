@@ -42,7 +42,6 @@
 }
 a {
   color: black;
-  text-decoration: underline;
 }
 
 a:visited,
@@ -52,4 +51,20 @@ a:active {
 
 a:hover {
   color: #C4161C;
+}
+.underline-link {
+  text-decoration: underline;
+}
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  background-color: white !important;
+  color: black !important;
+}
+
+textarea, select {
+  background-color: white !important;
+  color: black !important;
 }
