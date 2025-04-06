@@ -33,7 +33,7 @@ const StudentCertificates = () => {
             className="w-[30px] h-[30px]"
           />
           <Link
-            to="/settings"
+            to="/settings-student"
             className="text-[24px] underline-link"
           >
           Settings
