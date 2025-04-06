@@ -68,3 +68,7 @@ textarea, select {
   background-color: white !important;
   color: black !important;
 }
+
+label {
+  cursor: pointer;
+}
