@@ -53,7 +53,7 @@ const Settings = () => {
       <div className="!flex !justify-center !mt-6">
         <button onClick={handleIssue} className="!bg-[#C4161C] !text-white !py-2 !px-6 !rounded-full !text-center">Confirm Changes</button>
       </div>
-      {/* Removed footer line above Home and Logout */}
+      
       <div className="!fixed !bottom-0 !left-0 !w-full !h-[60px] !bg-white !flex !justify-between !items-center !px-8">
         <a href="/faculty-dashboard" className="!flex !items-center !space-x-2">
           <img src="/home.png" alt="Home" className="!w-[24px] !h-[24px]" />
