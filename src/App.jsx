@@ -7,7 +7,7 @@ import FacultyIssuedCertificates from "./Components/FacultyIssuedCertificates";
 import Settings from "./Components/Settings";
 import StudentCertificates from "./Components/StudentCertificates";
 import RaiseComplaint from "./Components/RaiseComplaint";
-
+import StuSettings from "./Components/settings_student";
 function App() {
   return (
     <Router>
@@ -20,6 +20,7 @@ function App() {
         <Route path="/student-certificates" element={<StudentCertificates />} />
         <Route path="/raise-complaint" element={<RaiseComplaint />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/settings-student" element={<StuSettings />} />
       </Routes>
     </Router>
   );
