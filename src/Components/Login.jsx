@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [userType, setUserType] = useState("faculty");
@@ -76,9 +77,16 @@ const Login = () => {
             Sign In
           </button>
         </div>
-        <p className="absolute bottom-[10px] right-[15px] text-[22px] text-gray-600 underline cursor-pointer">
+        <Link
+          to="/forgot-password"
+          className="absolute bottom-[10px] right-[15px] text-[22px] text-gray-600 underline-link">
             Forgot password?
-        </p>
+        </Link>
+        <Link
+          to="/verification-page"
+          className="absolute bottom-[10px] left-[15px] text-[22px] text-gray-600 underline-link">
+            Verify Certificate
+          </Link>
       </div>
     </div>
   );

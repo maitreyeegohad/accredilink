@@ -8,6 +8,9 @@ import Settings from "./Components/Settings";
 import StudentCertificates from "./Components/StudentCertificates";
 import RaiseComplaint from "./Components/RaiseComplaint";
 import StuSettings from "./Components/settings_student";
+import VerificationPage from "./Components/VerificationPage";
+import ForgotPassword from "./Components/ForgotPassword";
+
 function App() {
   return (
     <Router>
@@ -21,6 +24,8 @@ function App() {
         <Route path="/raise-complaint" element={<RaiseComplaint />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/settings-student" element={<StuSettings />} />
+        <Route path="/verification-page" element={<VerificationPage />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </Router>
   );
